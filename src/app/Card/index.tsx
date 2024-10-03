@@ -1,3 +1,3 @@
-import Card from "@/app/Card/Card";
+import Card from "@/app/card/Card";
 
 export default Card

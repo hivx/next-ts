@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import img from "../../../public/assets/tree.jpg"
 
 export const StyledCard = styled.div`
   width: 100%;
@@ -26,11 +27,21 @@ export const StyledDiv = styled.div`
     height: 100%;           
 `;
 
-export const StyledText = styled.text`
-    font-size: 18px;
+export const StyledText = styled.p`
+    font-family: "Allura", cursive;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 30px;
     color: purple;
     display: flex;
     justify-content: center;
-    align-items: center;    
-    height: 100%; 
+    align-items: center;
+    height: 100%;
+`;
+
+export const StyledImg = styled.div`
+  background-image: url(${img.src});
+  background-size: cover;
+  width: 100px;
+  height: 100px;
 `;
