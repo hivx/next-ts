@@ -1,14 +1,24 @@
-import React from 'react';
-import { DatePicker } from 'antd';
-import Card from '@/app/card';
+'use client'
+import ButtonRedirect from '@/app/components/ButtonRedirect';
+import { StyledLi, StyledUl, StyledMain, StyledLink, StyledHeader } from '@/app/styled/Global.styled'
 
-const App = () => {
+export default function Home() {
+
   return (
-    <>
-      <Card />
-      <DatePicker />      
-    </>
-  );
-};
-
-export default App;
+    <StyledMain>
+      <StyledHeader>
+        Main Page
+      </StyledHeader>
+      <StyledUl>
+        <StyledLi>
+          <StyledLink href={'/login'}>Enter Login</StyledLink>
+        </StyledLi>
+        <StyledLi>
+          <StyledLink href={'/register'}>Enter Register</StyledLink>
+        </StyledLi>
+      </StyledUl>
+      <ButtonRedirect redirectTo={'login'} />
+      <ButtonRedirect redirectTo={'register'} />
+    </StyledMain>
+  )
+}
